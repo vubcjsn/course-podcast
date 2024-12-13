@@ -1,3 +1,246 @@
+/* Общие стили */
+/** {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}*/
+body,
+h2,
+h3,
+p{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+h1{
+    font-style: 49px;
+    line-height: 1.5;
+    min-width: 500px;
+    word-wrap: break-word;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+.top-banner{
+    display: flex;
+    justify-content:space-between;
+    background-color: #EDEDED;
+    padding: 10px;
+
+}
+.top-banner-link{
+    text-decoration: none;
+    color: #D87775;   
+}
+
+
+.top-banner-link:last-child{
+    margin-right: 0;
+}
+
+/* Верхний хедер */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 156px;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #757575;
+}
+.header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.header nav ul li a {
+    color: #757575;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.btn {
+    background-color: #ff6b6b;
+    color:#FFFFFF;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.btn:hover{
+    background-color: #D87775;
+}
+
+
+
+
+
+/*След секция*/ 
+
+/* Главный баннер */
+.container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    gap: 20px; 
+    padding: 50px;
+    max-width: 90%; 
+    flex-wrap: wrap; 
+    box-sizing: border-box;
+}
+
+.content {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+    max-width: 50%; 
+    align-items: flex-start; 
+}
+
+.image {
+    max-width: 40%;
+    height: auto; 
+}
+
+.hero-container{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 180px;
+}
+
+.hero-image{
+    width: 500px;
+    height: auto;
+}
+
+.hero-text{
+    font-size: 16px;
+    color: #333;
+}
+
+
+
+
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    margin-bottom: 20px;
+    color: #555;
+    
+}
+p{
+    color: #464646;
+}
+
+.price {
+    margin-bottom: 20px;
+}
+
+.current-price {
+    font-size: 31px;
+    color: #ff6b6b;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.old-price {
+    font-size: 20px;
+    color: #757575;
+    text-decoration: line-through;
+}
+
+.btn {
+    background-color: #ff6b6b;
+    color: #FFFFFF
+}
+
+.btn.watch-trailer {
+    background-color:#EDEDED;
+    color: #757575;
+    
+}
+
+.btn.watch-trailer:hover{
+    background-color: #333;
+}
+
+/* Блок с преимуществами *//*
+.features {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.features .feature {
+    max-width: 30%;
+    margin: 0 auto 30px;
+    text-align: left;
+}
+
+.features img {
+    margin-bottom: 15px;
+}
+
+/* Финальный блок */
+.teachers {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.teacher-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.teacher-text h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+/*
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body,
 h1,
 h2,
@@ -8,33 +251,38 @@ p {
   font-family: Arial, sans-serif;
 }
 body {
-  line-height: 1.6;
+  
   color: #333;
-}
+  font-family: Arial, sans-serif;
 
-/* Header */
-.header {
-  background: #f9f9f9;
-  padding: 10px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-.header .logo {
-  font-size: 24px;
-  font-weight: bold;
-}
-.header .btn {
-  padding: 10px 20px;
-  background: #ff5252;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
+
+ 
+
+  /* Header */
+ /* .header {
+    background: #f9f9f9;
+    padding: 0 156;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .header .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .header .btn {
+    padding: 10px 20px;
+    background: #ff5252;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
 }
 
 /* Hero Section */
-.hero {
+/*.hero {
   display: flex;
   padding: 50px 20px;
   align-items: center;
@@ -77,7 +325,7 @@ body {
 }
 
 /* Features Section */
-.features {
+/*.features {
   background: #f9f9f9;
   padding: 50px 20px;
 }
@@ -99,7 +347,7 @@ body {
 }
 
 /* Teachers Section */
-.teachers {
+/*.teachers {
   padding: 50px 20px;
   display: flex;
   gap: 20px;
