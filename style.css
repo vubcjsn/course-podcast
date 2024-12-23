@@ -7,7 +7,7 @@ p {
   font-family: Arial, sans-serif;
 }
 h1 {
-  font-style: 49px;
+  font-style: 35px;
   line-height: 1.5;
   min-width: 500px;
   word-wrap: break-word;
@@ -21,7 +21,7 @@ body {
 .top-banner {
   display: flex;
   justify-content: center;
-  background-color: #ffffff;
+  background-color: #ededed;
   padding: 8px;
 }
 .top-banner-link {
@@ -38,9 +38,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 156px;
-  background-color: #ffffff;
-  border-bottom: 1px solid #ffffff;
+  padding: 20px 100px;
+  background-color: #fbfbfb;
+  border-bottom: 50px solid #ffffff;
 }
 
 .logo {
@@ -57,7 +57,7 @@ body {
 .header nav ul li a {
   color: #757575;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .btn {
@@ -77,11 +77,9 @@ body {
 .container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   gap: 20px;
-  padding: 50px;
+  padding: 10px 100px;
   max-width: 90%;
-  box-sizing: border-box;
 }
 
 .content {
@@ -106,15 +104,17 @@ body {
 }
 
 .hero-image {
-  width: 500px;
-  height: auto;
+  max-width: 100%;
+  border-radius: 10px;
 }
 
-.hero-text {
-  font-size: 16px;
-  color: #333;
+.hero h1 {
+  font-size: 49px;
+  width: 494;
+  font-weight: normal;
+  text-align: left;
+  color: #0f0f0f;
 }
-
 .hero {
   display: flex;
   align-items: center;
@@ -122,21 +122,11 @@ body {
   padding: 50px 0;
 }
 
-.hero-text {
-  max-width: 50%;
-}
-
-.hero-text h1 {
-  font-size: 36px;
-  margin-bottom: 20px;
-}
-
-.hero-text p {
+.hero p {
   margin-bottom: 20px;
   color: #757575;
-}
-p {
-  color: #464646;
+  font-size: 20px;
+  width: 461px;
 }
 
 .price {
@@ -199,49 +189,6 @@ p {
 body {
   color: #333;
   font-family: Arial, sans-serif;
-}
-
-/* Hero Section */
-.hero {
-  display: flex;
-  padding: 50px 20px;
-  align-items: center;
-  background: #ffffff;
-}
-.hero-content {
-  flex: 1;
-}
-.hero-content h1 {
-  font-size: 36px;
-  margin-bottom: 20px;
-}
-.hero-content p {
-  margin-bottom: 10px;
-}
-.hero-content .price {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-.hero-content .price .old-price {
-  text-decoration: line-through;
-  color: #ffffff;
-}
-.hero-content .buttons .btn {
-  margin-right: 10px;
-  padding: 10px 20px;
-  text-decoration: none;
-  color: #ffffff;
-  border-radius: 5px;
-}
-.hero-content .btn.enroll {
-  background: #ff5252;
-}
-.hero-content .btn.watch-trailer {
-  background: #555;
-}
-.hero-image img {
-  max-width: 100%;
-  border-radius: 10px;
 }
 
 /* Features Section */
@@ -339,41 +286,34 @@ body {
 .skills {
   display: flex;
   top: 10px;
+  padding: 100px 10px;
 }
 
 .skills-container {
   display: flex;
   gap: 140px;
-  flex-direction: row-reverse;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   min-width: 1200px;
-  margin: 100px;
+  padding: 10px 100px;
 }
 
 .skills-image {
   max-width: 100%;
-  height: auto;
-  border-radius: 0px;
-  flex: 0 0 40%;
+  height: 612px;
   width: 100%;
   height: auto;
+  top: 10px;
 }
-.skills-text h2 {
+.skills-title {
   width: 475px;
   color: rgb(15, 15, 15);
-  font-size: 40px;
-  font-weight: 990;
-  line-height: 90px;
-  text-align: center;
+  font-size: 38px;
 }
-.skills-text p {
+.skills-text {
   color: #0f0f0f;
   font-size: 18px;
   font-weight: normal;
-  line-height: 1.5;
-  max-width: 400px;
-  margin-right: 110px;
 }
 
 /*included section*/
@@ -391,20 +331,16 @@ header {
   padding: 50px 20px;
   font-size: 80px;
 }
-.included h1 {
+.included-title {
   color: #ffffff;
 }
 
 .stats {
   display: flex;
   justify-content: center;
-  gap: 130px;
+  gap: 80px;
   margin: 55px;
   font-size: 17px;
-}
-
-.stats div {
-  text-align: center;
 }
 
 .stats div span {
@@ -414,23 +350,47 @@ header {
 }
 /*curricculum section*/
 .curriculum {
-  padding: 2rem;
+  padding: 100px 50px;
   background: #ffffff;
-  text-align: center;
+  position: relative;
+  width: 600px;
+  height: 468px;
+  left: 315px;
+  top: 109px;
+}
+.curriculum h2 {
+  position: relative;
+  width: 600px;
+  height: 100px;
+  font-size: 41px;
 }
 
 .accordion button {
+  display: flex;
+  justify-content: space-between;
   width: 100%;
-  padding: 1rem;
-  text-align: left;
+  padding: 12px;
+  text-align: initial;
   border: 1px solid #ffffff;
-  background: #ffffff;
-  margin-bottom: 1rem;
+  background: #ededed;
+  margin-bottom: 12px;
   cursor: pointer;
 }
 
 .accordion button:hover {
-  background: #ffffff;
+  background: #464646;
+}
+
+.curriculum-img-button {
+  position: relative;
+  width: 16px;
+  height: 10px;
+  left: 400px;
+  transition: transform 0.3s ease;
+}
+
+.curriculum-img:hover {
+  transform: rotate(90deg);
 }
 /* General Styles */
 body {
@@ -576,10 +536,6 @@ body {
   padding-left: 0;
   margin: 20px;
   text-align: left;
-  position: relative;
-  width: 334px;
-  height: 14px;
-  top: 32px;
 }
 
 .pricing h2 {
@@ -606,11 +562,8 @@ body {
   display: flex;
   justify-content: center;
   gap: 40px;
-  position: relative;
   width: 900px;
-  height: 850px;
-  left: 165px;
-  top: 10px;
+  margin: 0 auto;
   padding: 10px;
 }
 
@@ -619,15 +572,13 @@ body {
   padding: 20px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   max-width: 300px;
-  align-items: flex-start;
-  height: 572px;
+  align-self: flex-start;
 }
 .card-second {
   background: #fff;
   padding: 20px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   max-width: 300px;
-  height: 677px;
 }
 
 .card .price {
