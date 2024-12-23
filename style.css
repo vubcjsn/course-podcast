@@ -363,6 +363,7 @@ header {
   width: 600px;
   height: 100px;
   font-size: 41px;
+  left: 60px;
 }
 
 .accordion button {
@@ -686,27 +687,46 @@ p {
   font-weight: bold;
 }
 /*footer sections*/
+
 footer {
   background: #ffffff;
-  padding: 60px 100px;
+  padding: 60px 20px;
+  border-top: 1px solid #ddd;
 }
 
 .footer-content {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  align-items: flex-start;
   max-width: 1200px;
   margin: 0 auto;
+  flex-wrap: wrap;
 }
 
-.footer-content h3 {
+.branding {
+  max-width: 400px;
+}
+
+.branding p {
+  font-size: 16px;
+  color: #0f0f0f;
+  margin: 10px 0;
+}
+
+.branding a {
+  color: #017cff;
+  text-decoration: underline;
+}
+
+.links {
+  display: flex;
+  gap: 50px;
+}
+
+.links h3 {
   margin-bottom: 10px;
   color: #b1b1b1;
-}
-
-.footer-content p {
   font-size: 18px;
-  color: #0f0f0f;
 }
 
 .links ul {
@@ -719,28 +739,16 @@ footer {
 }
 
 .links a {
-  color: #ddd;
+  color: #0f0f0f;
   text-decoration: none;
   font-size: 0.9em;
-  color: #0f0f0f;
-}
-.container-reviws {
-  /*добавила два класса рока безрезультатно*/
-  position: relative;
-  width: 120px;
-  height: 215px;
-  left: 0;
-  top: 0;
-}
-.admin-links {
-  /*2*/
-  position: relative;
-  width: 120px;
-  height: 215px;
-  left: 70px;
-  top: 90;
 }
 
 .links a:hover {
   text-decoration: underline;
+}
+
+.logo {
+  width: 120px;
+  margin-bottom: 10px;
 }
